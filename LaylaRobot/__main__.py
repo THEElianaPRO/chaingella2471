@@ -104,8 +104,8 @@ Powered by :- @LaylaList"""
 yone_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @kittu5588 \
- Supporting isnt always financial! \
+ You can support the project [Hero](t.me/HEROGAMERS1) \
+ Supporting isnt always financial! [AwesomeSupport](t.me/LaylaList) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
