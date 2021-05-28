@@ -36,6 +36,7 @@ alphabet_detector
 pybase64
 pySmartDL
 validators
+nekos
 pyrate-limiter
 cachetools
 ujson
