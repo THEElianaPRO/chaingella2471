@@ -71,6 +71,9 @@ __help__ = """
   - /dart or /dart 1 to 6 any value
  Usage: hahaha just a magic.
  warning: you would be in trouble if you input any other value than mentioned.
+ *Truth And Dare:*
+  - /Truth : for random truth.
+  - /dare : for random dare.
 """
 
 __mod_name__ = "Game"
