@@ -35,6 +35,7 @@ spamwatch
 alphabet_detector
 pybase64
 pySmartDL
+validators
 pyrate-limiter
 cachetools
 ujson
