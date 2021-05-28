@@ -4,7 +4,7 @@ import time
 
 import LaylaRobot.modules.fun_strings as fun_strings
 from LaylaRobot import dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
+from LaylaRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from LaylaRobot.modules.helper_funcs.chat_status import is_user_admin
 from LaylaRobot.modules.helper_funcs.alternate import typing_action
 from LaylaRobot.modules.helper_funcs.extraction import extract_user
