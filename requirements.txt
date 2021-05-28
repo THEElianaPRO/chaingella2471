@@ -34,6 +34,7 @@ heroku3
 spamwatch
 alphabet_detector
 pybase64
+pySmartDL
 pyrate-limiter
 cachetools
 ujson
