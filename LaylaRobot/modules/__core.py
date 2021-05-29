@@ -9,7 +9,7 @@ from LaylaRobot import OWNER_ID, DEV_USERS
 from LaylaRobot import TEMP_DOWNLOAD_DIRECTORY as path
 from LaylaRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './LaylaRobot/resources/yone.jpg'
+water = './LaylaRobot/resources/hero.png'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -36,34 +36,7 @@ async def Prof(event):
         await event.reply("No File Found!")
 
 
-from LaylaRobot.events import load_module
-import asyncio
-import os
-from datetime import datetime
-from pathlib import Path
 
-@register(pattern="^/install")
-async def install(event):
-    if event.fwd_from:
-        return
-    if event.sender_id == OWNER_ID or event.sender_id == DEV_USERS:
-        pass
-    else:
-        return
-    if event.reply_to_msg_id:
-        try:
-            downloaded_file_name = (
-                await event.client.download_media(  # pylint:disable=E0602
-                    await event.get_reply_message(),
-                    "LaylaRobot/modules/",  # pylint:disable=E0602
-                )
-            )
-            if "(" not in downloaded_file_name:
-                path1 = Path(downloaded_file_name)
-                shortname = path1.stem
-                load_module(shortname.replace(".py", ""))
-                await event.reply("Installed.... 👍\n `{}`".format(
-                        os.path.basename(downloaded_file_name)
                     ),
                 )
             else:
