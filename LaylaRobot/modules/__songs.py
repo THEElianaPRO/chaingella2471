@@ -44,7 +44,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from AsunaRobot import pbot as ASUNA
+from LaylaRobot import pbot as Layla
 
 ARQ = "https://thearq.tech/"
 
@@ -68,7 +68,7 @@ async def download_song(url):
     return song_name
 
 
-@ASUNA.on_message(filters.command("deezer"))
+@Layla.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Download Now Deezer")
@@ -98,7 +98,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from AsunaRobot import pbot as ASUNA
+from LaylaRobot import pbot as ASUNA
 
 ARQ = "https://thearq.tech/"
 
@@ -122,7 +122,7 @@ async def download_song(url):
     return song_name
 
 
-@ASUNA.on_message(filters.command("deezer"))
+@Layla.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Download Now Deezer")
