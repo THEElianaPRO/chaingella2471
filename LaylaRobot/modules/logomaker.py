@@ -153,7 +153,6 @@ file_helpo = file_help.replace("_", " ")
 
 @register(pattern="^/flogo ?(.*)")
 async def logo_gen(event):
-    xx = await eor(event, get_string("com_1"))
     name = event.pattern_match.group(1)
     if not name:
         await eod(xx, "`Give a name too!`")
