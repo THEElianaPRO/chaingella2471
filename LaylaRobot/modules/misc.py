@@ -95,6 +95,8 @@ __help__ = """
  ❍ /wiki <query>*:* wikipedia your query
 *Wallpapers:*
  ❍ /wall <query>*:* get a wallpaper from wall.alphacoders.com
+*live cricket score*
+ ❍ /cs*:* Latest live scores from cricinfo
 *Currency converter:* 
  ❍ /cash*:* currency converter
 Example:
