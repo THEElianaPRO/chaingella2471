@@ -1,6 +1,3 @@
-# credits  @chsaiujwal @daisyxrobot
-# ported to masha @Mr_Dark_Prince
-
 import urllib.request
 
 from bs4 import BeautifulSoup
@@ -42,11 +39,3 @@ async def _(event):
         f"<b><u>Match information gathered successful</b></u>\n\n\n<code>{Sed}</code>",
         parse_mode="HTML",
     )
-
-
-__help__ = """
-*live cricket score*
- ❍ /cs*:* Latest live scores from cricinfo
-"""
-
-__mod_name__ = "Cricket"
