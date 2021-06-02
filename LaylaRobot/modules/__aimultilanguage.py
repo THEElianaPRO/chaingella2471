@@ -69,7 +69,7 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("layla AI Was Not Activated In This Chat")
+            await lel.edit("Layla AI Was Not Activated In This Chat")
             return
         await lel.edit(
             f"layla AI Successfully Deactivated For Users In The Chat {message.chat.id}"
@@ -116,7 +116,7 @@ async def hmm(client, message):
         test = msg
         test = test.replace("layla", "Aco")
         test = test.replace("layla", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@LaylaRobot&ownername=@A_viyu"
+        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@LaylaRobot&ownername=@HEROGAMERS1"
 
         try:
             r = requests.request("GET", url=URL)
@@ -179,7 +179,7 @@ async def hmm(client, message):
         # Kang with the credits bitches @InukaASiTH
         test = test.replace("layla", "Aco")
         test = test.replace("layla", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@A_viyu"
+        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@HEROGAMERS1"
         try:
             r = requests.request("GET", url=URL)
         except:
@@ -253,7 +253,7 @@ async def inuka(client, message):
     # Kang with the credits bitches @InukaASiTH
     test = test.replace("layla", "Aco")
     test = test.replace("layla", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@A_viyu"
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@HEROGAMERS1"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -275,7 +275,7 @@ async def inuka(client, message):
 
 
 @layla.on_message(
-    filters.regex("layla|layla|layla|layla|layla")
+    filters.regex("layla|layla|Layla|Layla|Layla")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -362,4 +362,4 @@ layla AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
  
 """
 
-__mod_name__ = "chatbot"
+__mod_name__ = "Chatbot"
