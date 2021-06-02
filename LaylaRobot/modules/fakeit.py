@@ -6,7 +6,7 @@ from faker.providers import internet
 from telethon import events
 
 from LaylaRobot.pyrogramee.telethonbasics import is_admin
-from LaylaRobot import tbot
+from LaylaRobot import telethn as tbot
 
 @tbot.on(events.NewMessage(pattern="/fakegen$"))
 async def hi(event):
