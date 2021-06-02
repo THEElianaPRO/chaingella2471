@@ -6,9 +6,9 @@ from faker.providers import internet
 from telethon import events
 
 from LaylaRobot.pyrogramee.telethonbasics import is_admin
-from LaylaRobot import pbot
+from LaylaRobot import tbot
 
-@pbot.on(events.NewMessage(pattern="/fakegen$"))
+@tbot.on(events.NewMessage(pattern="/fakegen$"))
 async def hi(event):
     if event.fwd_from:
         return
@@ -33,7 +33,7 @@ async def hi(event):
     )
 
 
-@pbot.on(events.NewMessage(pattern="/picgen$"))
+@tbot.on(events.NewMessage(pattern="/picgen$"))
 async def _(event):
     if event.fwd_from:
         return
