@@ -1,9 +1,9 @@
 __mod_name__ = "◎Tools"
 
 __help__ = """
-*Telegraph*
- ❍ /txm :Get Telegraph Link Of Replied Media
- ❍ /txt :Get Telegraph Link of Replied T
+*Fake Info*
+ ❍ /fakegen*:* Generates Fake Information
+ ❍ /picgen*:* Generate a fake pic 
 
 *Date-time-Weather*
  ❍ /time <country code>*:* Gives information about a timezone.
