@@ -357,16 +357,14 @@ def layla_about_callback(update, context):
     query = update.callback_query
     if query.data == "layla_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *layla*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_layla's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/QueenArzoo/LaylaRobot).
-                 \n\nIf you have any question about layla, let us know at .""",
+            text=""" ℹ️ I'm *Layla*, a powerful group management bot built to help you manage your group easily.
+                 \n❍ Powered by & Updates Channel [Awesome Bots](https://t.me/LaylaList)
+                 \n❍ Support Group [Awesome Support](https://t.me/AwesomeSupport)
+                 \n❍ Source code Here is the [💾Repository](https://github.com/QueenArzoo/LaylaRobot)
+                 \n❍ Owner [Hero](https://t.me/HEROGAMERS1)
+                 \n❍ [Anti Ripping Organization](https://t.me/AntiRippingOrganization/410).
+                 \n\n_LAyla Music Assistant [Assistant](https://t.me/LaylaAssistant).
+                 \n\nIf you have any question about Layla, Join Support Group [Awesome Support](https://t.me/AwesomeSupport).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -392,8 +390,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *layla*
-                 \nHere is the [Source Code](https://github.com/Noob-kittu/LaylaRobot) .""",
+            text=""" Hi..🤗 I'm *Layla*
+                 \nHere is the [Source Code](https://github.com/QueenArzoo/LaylaRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
