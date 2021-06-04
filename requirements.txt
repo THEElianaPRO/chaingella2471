@@ -67,7 +67,7 @@ tswift
 envparse
 better_profanity
 textblob 
-urllib
+urllib==0.3.6
 nudepy
 motor
 cloudscraper
