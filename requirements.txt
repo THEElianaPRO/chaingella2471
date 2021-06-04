@@ -67,7 +67,7 @@ tswift
 envparse
 better_profanity
 textblob 
-textwrap==0.13.4
+textwrap>=0.13.4
 urllib
 nudepy
 motor
