@@ -105,7 +105,7 @@ buttons = [
 HELP_STRINGS = """
 `Hi.. I'M` Layla
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
-Powered by :- [Awesome Bots](https://t.me/Laylalist)"""
+Powered by :- [Awesome Bots](t.me/Laylalist)"""
 
 layla_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
 
@@ -365,6 +365,9 @@ def layla_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Layla's licensed under the GNU General Public License v3.0_
+                 \n❍ Awesome Bots @LaylaList
+                 \n❍ Support Group @AwesomeSupport
+                 \n❍ Assistant @LaylaAssistant.
                  \nHere is the [💾Repository](https://github.com/QueenArzoo/LaylaRobot).
                  \n\nIf you have any question about Layla, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
