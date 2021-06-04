@@ -358,13 +358,13 @@ def layla_about_callback(update, context):
     if query.data == "layla_":
         query.message.edit_text(
             text=""" ℹ️ I'm *Layla*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ Powered by & Updates Channel [Awesome Bots](https://t.me/LaylaList)
-                 \n❍ Support Group [Awesome Support](https://t.me/AwesomeSupport)
+                 \n❍ Powered by & Updates Channel Awesome Bots @LaylaList
+                 \n❍ Support Group @AwesomeSupport
                  \n❍ Source code Here is the [💾Repository](https://github.com/QueenArzoo/LaylaRobot)
-                 \n❍ Owner [Hero](https://t.me/HEROGAMERS1)
-                 \n❍ [Anti Ripping Organization](https://t.me/AntiRippingOrganization/410).
-                 \n\n_LAyla Music Assistant [Assistant](https://t.me/LaylaAssistant).
-                 \n\nIf you have any question about Layla, Join Support Group [Awesome Support](https://t.me/AwesomeSupport).""",
+                 \n❍ Owner Hero @HEROGAMERS1
+                 \n❍ @AntiRippingOrganization.
+                 \n\n_LAyla Music Assistant Assistant @LaylaAssistant.
+                 \n\nIf you have any question about Layla, Join Support Group @AwesomeSupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
