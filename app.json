@@ -1,6 +1,7 @@
 {
-      "name": "LaylaRobot",
+      "name": "Layla Robot",
       "description": "Telegram group management bot.",
+      "logo": "https://telegra.ph/file/8f6b24120aab8490dca45.jpg",
       "keywords": [
          "telegram",
          "anime",
@@ -8,7 +9,7 @@
          "manager",
          "Layla"
       ],   
-   "repository": "https://t.me/itsMeLegend",
+   "repository": "https://github.com/QueenArzoo/LaylaRobot.git",
    "addons": [
       {
          "options": {
@@ -49,7 +50,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": ""
+         "value": "797768146"
       },
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
@@ -66,12 +67,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": ""
+         "value": "HEROGAMERS1"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": ""
+         "value": "AwesomeSupport"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
