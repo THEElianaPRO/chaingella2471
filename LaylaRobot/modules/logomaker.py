@@ -159,8 +159,6 @@ import time
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 
-from . import *
-
 
 @register(pattern="/rlogo ?(.*)")
 async def logo_gen(event):
