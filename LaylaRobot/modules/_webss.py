@@ -1,10 +1,10 @@
 from pyrogram import filters
 
 from LaylaRobot.pyrogramee.pluginhelpers import admins_only
-LaylaRobot import pbot as app
+LaylaRobot import pbot
 
 
-@app.on_message(filters.command("webss") & ~filters.private & ~filters.edited)
+@pbot.on_message(filters.command("webss") & ~filters.private & ~filters.edited)
 @admins_only
 async def take_ss(_, message):
     if len(message.command) != 2:
