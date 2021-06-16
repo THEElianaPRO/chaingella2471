@@ -1,7 +1,7 @@
 from pyrogram import filters
 
 from LaylaRobot.pyrogramee.pluginhelpers import admins_only
-LaylaRobot import pbot
+from LaylaRobot import pbot
 
 
 @pbot.on_message(filters.command("webss") & ~filters.private & ~filters.edited)
