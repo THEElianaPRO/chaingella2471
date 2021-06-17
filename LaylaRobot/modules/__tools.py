@@ -1,9 +1,9 @@
 __mod_name__ = "◎Tools"
 
 __help__ = """
-*Fake Info*
- ❍ /fakegen*:* Generates Fake Information
- ❍ /picgen*:* Generate a fake pic 
+*QR code*
+ ❍ /getqr*:* Get text in QR
+ ❍ /makeqr*:* Make a QR code.
 
 *Date-time-Weather*
  ❍ /time <country code>*:* Gives information about a timezone.
