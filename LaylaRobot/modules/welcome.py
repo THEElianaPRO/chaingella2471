@@ -15,7 +15,7 @@ from LaylaRobot import (
     WOLVES,
     sw,
     dispatcher,
-    JOIN_LOGGERGER
+    JOIN_LOGGER
 )
 from LaylaRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
