@@ -27,7 +27,7 @@ from LaylaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from LaylaRobot.modules.LOGGER_channel import LOGGERgable
+from LaylaRobot.modules.log_channel import loggable
 from LaylaRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
