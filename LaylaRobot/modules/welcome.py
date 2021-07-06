@@ -15,7 +15,7 @@ from LaylaRobot import (
     WOLVES,
     sw,
     dispatcher,
-    JOIN_LOGGER
+    JOIN_LOGGERGER
 )
 from LaylaRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
@@ -27,7 +27,7 @@ from LaylaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from LaylaRobot.modules.log_channel import loggable
+from LaylaRobot.modules.LOGGER_channel import LOGGERgable
 from LaylaRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
@@ -129,9 +129,9 @@ def send(update, message, keyboard, backup_message):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_to_message_id=reply,
             )
-            log.warning(message)
-            log.warning(keyboard)
-            log.exception("Could not parse! got invalid url host errors")
+            LOGGER.warning(message)
+            LOGGER.warning(keyboard)
+            LOGGER.exception("Could not parse! got invalid url host errors")
         elif excp.message == "Have no rights to send a message":
             return
         else:
@@ -143,10 +143,11 @@ def send(update, message, keyboard, backup_message):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_to_message_id=reply,
             )
-            log.exception()
+            LOGGER.exception()
     return msg
 
 
+@run_async
 @loggable
 def new_member(update: Update, context: CallbackContext):
     bot, job_queue = context.bot, context.job_queue
@@ -162,7 +163,7 @@ def new_member(update: Update, context: CallbackContext):
 
     for new_mem in new_members:
 
-        welcome_log = None
+        welcome_LOGGER = None
         res = None
         sent = None
         should_mute = True
@@ -191,7 +192,7 @@ def new_member(update: Update, context: CallbackContext):
                 update.effective_message.reply_text(
                     "Oh hi, my creator.", reply_to_message_id=reply
                 )
-                welcome_log = (
+                welcome_LOGGER = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
                     f"Bot Owner just joined the chat"
@@ -207,7 +208,7 @@ def new_member(update: Update, context: CallbackContext):
                 continue
 
             # Welcome Sudos
-            elif new_mem.id in SUDO_USERS:
+            elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
                     "Huh! A Royal Nation just joined! Stay Alert!",
                     reply_to_message_id=reply,
@@ -512,8 +513,8 @@ def new_member(update: Update, context: CallbackContext):
                 if sent:
                     sql.set_clean_welcome(chat.id, sent.message_id)
 
-        if welcome_log:
-            return welcome_log
+        if welcome_LOGGER:
+            return welcome_LOGGER
 
         return (
             f"{html.escape(chat.title)}\n"
@@ -767,7 +768,7 @@ def goodbye(update: Update, context: CallbackContext):
 
 
 @user_admin
-@loggable
+@LOGGERgable
 def set_welcome(update: Update, context: CallbackContext) -> str:
     chat = update.effective_chat
     user = update.effective_user
@@ -791,7 +792,7 @@ def set_welcome(update: Update, context: CallbackContext) -> str:
 
 
 @user_admin
-@loggable
+@LOGGERgable
 def reset_welcome(update: Update, context: CallbackContext) -> str:
     chat = update.effective_chat
     user = update.effective_user
@@ -810,7 +811,7 @@ def reset_welcome(update: Update, context: CallbackContext) -> str:
 
 
 @user_admin
-@loggable
+@LOGGERgable
 def set_goodbye(update: Update, context: CallbackContext) -> str:
     chat = update.effective_chat
     user = update.effective_user
@@ -832,7 +833,7 @@ def set_goodbye(update: Update, context: CallbackContext) -> str:
 
 
 @user_admin
-@loggable
+@LOGGERgable
 def reset_goodbye(update: Update, context: CallbackContext) -> str:
     chat = update.effective_chat
     user = update.effective_user
@@ -851,7 +852,7 @@ def reset_goodbye(update: Update, context: CallbackContext) -> str:
 
 
 @user_admin
-@loggable
+@LOGGERgable
 def welcomemute(update: Update, context: CallbackContext) -> str:
     args = context.args
     chat = update.effective_chat
@@ -918,7 +919,7 @@ def welcomemute(update: Update, context: CallbackContext) -> str:
 
 
 @user_admin
-@loggable
+@LOGGERgable
 def clean_welcome(update: Update, context: CallbackContext) -> str:
     args = context.args
     chat = update.effective_chat
