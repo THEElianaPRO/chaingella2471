@@ -9,7 +9,7 @@ from LaylaRobot import OWNER_ID, DEV_USERS
 from LaylaRobot import TEMP_DOWNLOAD_DIRECTORY as path
 from LaylaRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './LaylaRobot/resources/yone.jpg'
+water = './LaylaRobot/resources/hero.png'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
