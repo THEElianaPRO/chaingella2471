@@ -80,12 +80,7 @@ Hey there! My name is *{}*, I'm here to help you manage our $CHNG groups!
 ✨ Powered by cross chain magic.*
 
 Chainge Finance is THE ultimate Defi app that empowers people from all over the world to become their own digital bank. With Chainge's automated financial services, users have complete control over their wealth while enjoying 100% freedom & security.
-Exchange, Earn, Connect with friends and easily Pay or Request assets with just a couple of taps - regardless of the chain your assets are on. 
-
-🔥 You can download our app from the [Appstore](https://apps.apple.com/ro/app/chainge-finance/id1578987516) (iOS) and [Google Play](https://play.google.com/store/apps/details?id=com.fusion.chainge.android) (Android) 
-
-┌───── •✧✧• ─────┐
-Through coded, automated financial services, Chainge is the application that's empowering people to be their own digital bank. With no middlemen, bureaucracy or hassle.    
+Exchange, Earn, Connect with friends and easily Pay or Request assets with just a couple of taps - regardless of the chain your assets are on.    
 
 @ChaingeFinanceNews
 └────────────── •✧✧• ──────────┘
