@@ -74,15 +74,29 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M Layla
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
-Maintained by @HEROGAMERS1 ❤
+Hey there! My name is *{}*, I'm here to help you manage our $CHNG groups!
+
+*🌎 Your own DeFi universe in one app
+✨ Powered by cross chain magic.*
+
+Chainge Finance is THE ultimate Defi app that empowers people from all over the world to become their own digital bank. With Chainge's automated financial services, users have complete control over their wealth while enjoying 100% freedom & security.
+Exchange, Earn, Connect with friends and easily Pay or Request assets with just a couple of taps - regardless of the chain your assets are on. 
+
+🔥 You can download our app from the [Appstore](https://apps.apple.com/ro/app/chainge-finance/id1578987516) (iOS) and [Google Play](https://play.google.com/store/apps/details?id=com.fusion.chainge.android) (Android) 
+
+┌───── •✧✧• ─────┐
+Through coded, automated financial services, Chainge is the application that's empowering people to be their own digital bank. With no middlemen, bureaucracy or hassle.    
+
+@ChaingeFinanceNews
+└────────────── •✧✧• ──────────┘
+
+📯 Maintained by @ARKSUjon
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/LaylaRobot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/ChaingellaBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="layla_"),
@@ -91,7 +105,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/laylalogs"),
+        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/ChaingellaLogs"),
         InlineKeyboardButton(
             text="ꜰᴇᴅᴇʀᴀᴛɪᴏɴ", url=f"https://t.me/AntiRippingOrganization/410"
         ),
@@ -103,15 +117,20 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'M` Layla
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
-Powered by :- [Awesome Bots](t.me/Laylalist)"""
+Hey there! My name is *{}*, I'm here to help you manage our $CHNG groups!
 
-layla_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
+*🌎 Your own DeFi universe in one app
+✨ Powered by cross chain magic.*
+
+Chainge Finance is THE ultimate Defi app that empowers people from all over the world to become their own digital bank. With Chainge's automated financial services, users have complete control over their wealth while enjoying 100% freedom & security.
+Exchange, Earn, Connect with friends and easily Pay or Request assets with just a couple of taps - regardless of the chain your assets are on.
+"""
+
+layla_IMG = "https://telegra.ph/file/8aaf4987ccea32ee59d5c.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Hero](t.me/HEROGAMERS1) \
- Supporting isnt always financial! [AwesomeSupport](t.me/LaylaList) \
+ You can support the project [Hero](t.me/Eliana2020Eliana) \
+ Supporting isnt always financial! [AwesomeSupport](t.me/ChaingeFinanceNews) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
