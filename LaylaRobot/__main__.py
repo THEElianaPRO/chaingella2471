@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey there! My name is *{}*, I'm here to help you manage our $CHNG groups!
+Hey there! My name is *Chaingella*, I'm here to help you manage our $CHNG groups!
 
 *🌎 Your own DeFi universe in one app
 ✨ Powered by cross chain magic.*
@@ -101,6 +101,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/ChaingellaLogs"),
+        InlineKeyboardButton(
+            text="ꜰᴇᴅᴇʀᴀᴛɪᴏɴ", url=f"https://t.me/AntiRippingOrganization/410"
+        ),
     ],
     [
         InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
@@ -109,21 +112,28 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey there! My name is *{}*, I'm here to help you manage our $CHNG groups!
+Hey there! My name is *Chaingella*, I'm here to help you manage our $CHNG groups!
 
 *🌎 Your own DeFi universe in one app
 ✨ Powered by cross chain magic.*
 
 Chainge Finance is THE ultimate Defi app that empowers people from all over the world to become their own digital bank. With Chainge's automated financial services, users have complete control over their wealth while enjoying 100% freedom & security.
-Exchange, Earn, Connect with friends and easily Pay or Request assets with just a couple of taps - regardless of the chain your assets are on.
-"""
+Exchange, Earn, Connect with friends and easily Pay or Request assets with just a couple of taps - regardless of the chain your assets are on.    
+
+@ChaingeFinanceNews
+└────────────── •✧✧• ──────────┘
+
+📯 Maintained by @ARKSUjon
 
 layla_IMG = "https://telegra.ph/file/8aaf4987ccea32ee59d5c.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Hero](t.me/Eliana2020Eliana) \
- Supporting isnt always financial! [AwesomeSupport](t.me/ChaingeFinanceNews) \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """Heya, Glad to hear you want to donate!
+It took a lot of work for my creator to get me to where I am now so if you have some money to spare and want to show your support... Donate!
+After all server fees dont pay themselves so every little helps! All donation money goes straight to funding the VPS and of course boosting morale always nice to see my work is appreciated
+
+There are only one ways of paying him : [ARKSUjon](https://t.me/ARKSUjon)
+
+Thank you for your generosity!"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -368,19 +378,27 @@ def layla_about_callback(update, context):
     query = update.callback_query
     if query.data == "layla_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Layla*, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Layla's licensed under the GNU General Public License v3.0_
-                 \n❍ Awesome Bots @LaylaList
-                 \n❍ Support Group @AwesomeSupport
-                 \n❍ Assistant @LaylaAssistant.
-                 \nHere is the [💾Repository](https://github.com/QueenArzoo/LaylaRobot).
-                 \n\nIf you have any question about Layla, let us know at .""",
+            text=""" 🌎 Your own DeFi universe in one app\n✨ Powered by cross chain magic.\n\n
+                 Chainge is THE ultimate Defi app that empowers people from all over the world to become their own digital bank. With Chainge's automated financial services, users have complete control over their wealth while enjoying 100% freedom & security.
+                 Exchange, Earn, Connect with friends and easily Pay or Request assets with just a couple of taps - regardless of the chain your assets are on.\n\n
+                 ❗️ Official Resources❗️\n\n
+                 🔥 You can download our app from the [Appstore](https://apps.apple.com/ro/app/chainge-finance/id1578987516) (iOS) and\n
+                 🔥 [Google Play](https://play.google.com/store/apps/details?id=com.fusion.chainge.android) (Android)\n\n
+                 ☑️ [Website](http://www.chainge.finance/)\n
+                 ☑️ [Chainge DEX Market](https://www.chainge.finance/info/assets)\n
+                 ☑️ [Twitter](https://twitter.com/FinanceChainge)\n
+                 ☑️ [Gitbook](https://chaingefinance.gitbook.io/chainge-finance)\n
+                 ☑️ [Medium](https://chainge-finance.medium.com/\n
+                 ☑️ [Facebook](https://www.facebook.com/chainge.finance)\n
+                 ☑️ [Instagram](https://www.instagram.com/chainge.finance\n
+                 ☑️ [CoinMarketCap](https://coinmarketcap.com/currencies/chainge\n
+                 ☑️ [Coin Gecko](https://www.coingecko.com/en/coins/chainge-finance)\n
+                 ☑️ [LunarCrush](https://lunarcrush.com/coins/chng/chainge?interval=1%20Week\n
+                 ☑️ [Blockfolio](https://blockfolio.com/coin/CHNG\n
+                 ☑️ [Certik Org Audits](https://t.co/L5y2nM8nBv?amp=1)\n
+                 ☑️ [News Channel](http://t.me/chaingefinancenews)\n\n
+                 🙂 Smart contract (We Are Cross-Chain) `0xed0294dbd2a0e52a09c3f38a09f6e03de2c44fcf`\n\n
+                 🚀 Thank you for being a Chainger!""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -656,7 +674,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != 254318997 and DONATION_LINK:
             update.effective_message.reply_text(
-                "You can also donate to the person currently running me "
+                "Follow the chainge finance channel for upcoming announcements "
                 "[here]({})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
             )
