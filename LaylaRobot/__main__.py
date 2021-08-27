@@ -383,7 +383,8 @@ def layla_about_callback(update, context):
                  Chainge is THE ultimate Defi app that empowers people from all over the world to become their own digital bank. With Chainge's automated financial services, users have complete control over their wealth while enjoying 100% freedom & security.
                  Exchange, Earn, Connect with friends and easily Pay or Request assets with just a couple of taps - regardless of the chain your assets are on.\n\n
                  ❗️ Official Resources❗️\n\n
-                 🔥 You can download our app from the [Appstore](https://apps.apple.com/ro/app/chainge-finance/id1578987516) (iOS) and 🔥 [Google Play](https://play.google.com/store/apps/details?id=com.fusion.chainge.android) (Android)\n\n
+                 🔥 You can download our app from the [Appstore](https://apps.apple.com/ro/app/chainge-finance/id1578987516) iOS\n
+                 🔥 [Google Play](https://play.google.com/store/apps/details?id=com.fusion.chainge.android) Android\n
                  ☑️ [Website](http://www.chainge.finance/)\n
                  ☑️ [Chainge DEX Market](https://www.chainge.finance/info/assets)\n
                  ☑️ [Twitter](https://twitter.com/FinanceChainge)\n
